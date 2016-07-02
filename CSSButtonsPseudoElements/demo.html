@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	  .layer{
+	    position: fixed;
+	    left: 0;
+	    top: 0;
+	    bottom: 0;
+	    right: 0;
+	    z-index: 999;
+	    background-color: rgba(38,41,44,0.3);
+	    text-align: center;
+	  }
+	  .layer-content{
+	  	position: relative;
+	    width: 30%;
+	    height: 50%;
+	    margin: 10% auto;
+	    background-color: #fff;
+	    box-shadow: 4px 4px 4px #26292C;
+	  }
+	  .layer-content>div{
+	  	width: 70%;
+	  	height: 50%;
+	  	margin: 0 auto;
+	  	position: absolute;
+	  	top: 50%;
+	  	left: 50%;
+	  	margin-left: -35%;
+	  	margin-top: -25%;
+	  }
+
+	  .layer-content div a{
+	  	display: block;
+	  	margin: 0 auto;
+	  	margin-top: 10%;
+	  }
+	 /* .layer-content div a+.a_demo_four{
+		margin-top: 10%;
+	  }*/
+	  .a_demo_four {
+	      background-color: #3bb3e0;
+	      font-family: 'Open Sans', sans-serif;
+	      font-size: 12px;
+	      text-decoration: none;
+	      color: #fff;
+	      position: relative;
+	      padding: 10px 20px;
+	      padding-right: 50px;
+	      background-image: linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	      background-image: -o-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	      background-image: -moz-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	      background-image: -webkit-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	      background-image: -ms-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	      background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(44,160,202)), color-stop(1, rgb(62,184,229)) );
+	      -webkit-border-radius: 5px;
+	      -moz-border-radius: 5px;
+	      -o-border-radius: 5px;
+	      border-radius: 5px;
+	      -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+	      -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+	      -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+	      box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+	  }
+	  .a_demo_four::before {
+	      background-color: #2591b4;
+	      background-image: url(images/right_arrow.png);
+	      background-repeat: no-repeat;
+	      background-position: center center;
+	      content: "";
+	      width: 20px;
+	      height: 20px;
+	      position: absolute;
+	      right: 15px;
+	      top: 50%;
+	      margin-top: -9px;
+	      -webkit-border-radius: 50%;
+	      -moz-border-radius: 50%;
+	      -o-border-radius: 50%;
+	      border-radius: 50%;
+	      -webkit-box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #60c9f0;
+	      -moz-box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #60c9f0;
+	      -o-box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #60c9f0;
+	      box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #60c9f0;
+	  }
+	</style>
+</head>
+<body>
+	<!-- 遮罩层 -->
+	<div class="layer">
+	  <div class="layer-content">
+    	<div>
+    		<h3>请选择进入模式</h3>
+    		<a href="#" class="a_demo_four">正常模式</a>
+    		<a href="#" class="a_demo_four">娱乐模式</a>
+    	</div>
+	  </div>
+	</div>
+
+
+	<script>
+		// window.onload = function (){
+		// 	var net = new Object();
+
+		// 	net.fn = function (){
+		// 		this.url = null;
+		// 		this.param = 3;
+		// 		this.fun();
+		// 	}
+
+		// 	net.fn.prototype.fun = function (){
+		// 		alert(3);
+		// 	}
+
+			
+		// 	console.log(typeof (new net.fn) === 'object' );
+
+		// 	document.onkeydown = function (event){
+		// 		console.log(event);
+		// 		console.log(event.which);
+		// 	}
+
+		// 	console.log(Math)
+
+
+		// 	window.onbeforeunload = function (){
+		// 		return false;
+		// 	}
+		// }
+
+	</script>
+
+</body>
+</html>
